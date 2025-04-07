@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    //classic colors used in app
+    <color name="buttons_classic">#421A1A</color>
+    <color name="buttons_text_classic">#D7D1BD0E</color>
+    <color name="inputs_classic">#BFB081</color>
+    <color name="text_classic">#3A0707</color>
+    <color name="modifiers_classic">#74A15215</color>
+    <color name="modifiers_text_classic">#FFFFFF</color>
+    <color name="views_classic">#E6C1A758</color>
+    <color name="labels_text_classic">#3A0707</color>
+    <color name="background_classic">#4C402D</color>
+    //------copies so i can play with colors---
+    <color name="original_buttons_classic">#421A1A</color>
+    <color name="original_buttons_text_classic">#D7D1BD0E</color>
+    <color name="original_inputs_classic">#BFB081</color>
+    <color name="original_text_classic">#3A0707</color>
+    <color name="original_modifiers_classic">#74A15215</color>
+    <color name="original_modifiers_text_classic">#FFFFFF</color>
+    <color name="original_views_classic">#E6C1A758</color>
+    <color name="original_labels_text_classic">#3A0707</color>
+    <color name="original_background_classic">#4C402D</color>
+</resources>

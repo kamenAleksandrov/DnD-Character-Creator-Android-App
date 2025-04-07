@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startScreen">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="dndCharacterCreator.FirstFragment"
+        android:label="Main Stats"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_equipmentAndTreasure"
+            app:destination="@id/equipmentAndTreasure" />
+        <action
+            android:id="@+id/action_FirstFragment_to_combat"
+            app:destination="@id/combat" />
+        <action
+            android:id="@+id/action_FirstFragment_to_otherProficienciesAndLanguages"
+            app:destination="@id/otherProficienciesAndLanguages" />
+        <action
+            android:id="@+id/action_FirstFragment_to_featuresAndTraits"
+            app:destination="@id/featuresAndTraits" />
+        <action
+            android:id="@+id/action_FirstFragment_to_personality"
+            app:destination="@id/personality" />
+        <action
+            android:id="@+id/action_FirstFragment_to_healthPointsInfo"
+            app:destination="@id/healthPointsInfo" />
+        <action
+            android:id="@+id/action_FirstFragment_to_skills"
+            app:destination="@id/skills" />
+        <action
+            android:id="@+id/action_FirstFragment_to_characterClassAndInfo"
+            app:destination="@id/characterClassAndInfo" />
+        <action
+            android:id="@+id/action_FirstFragment_to_diceRollerDialogFragmentLayout"
+            app:destination="@id/diceRollerDialogFragmentLayout" />
+        <action
+            android:id="@+id/action_FirstFragment_to_characterCreation"
+            app:destination="@id/characterCreation" />
+        <action
+            android:id="@+id/action_FirstFragment_to_preparedAbilitiesAndSpellcasting"
+            app:destination="@id/preparedAbilitiesAndSpellcasting" />
+        <action
+            android:id="@+id/action_FirstFragment_to_spellbookClasses"
+            app:destination="@id/spellbookClasses" />
+        <action
+            android:id="@+id/action_FirstFragment_to_userDrawingCanvas"
+            app:destination="@id/userDrawingCanvas" />
+        <action
+            android:id="@+id/action_FirstFragment_to_startScreen"
+            app:destination="@id/startScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/equipmentAndTreasure"
+        android:name="dndCharacterCreator.EquipmentAndTreasure"
+        android:label="Equipment And Treasure"
+        tools:layout="@layout/fragment_equipment_and_treasure">
+        <action
+            android:id="@+id/action_equipmentAndTreasure_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startScreen"
+        android:name="dndCharacterCreator.StartScreen"
+        android:label="Main Menu"
+        tools:layout="@layout/fragment_start_screen">
+        <action
+            android:id="@+id/action_startScreen_to_characterCreation"
+            app:destination="@id/characterCreation" />
+    </fragment>
+    <fragment
+        android:id="@+id/combat"
+        android:name="dndCharacterCreator.Combat"
+        android:label="Combat Notes"
+        tools:layout="@layout/fragment_combat">
+        <action
+            android:id="@+id/action_combat_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_combat_to_userDrawingCanvas"
+            app:destination="@id/userDrawingCanvas" />
+        <action
+            android:id="@+id/action_combat_to_abilityFragment"
+            app:destination="@id/abilityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherProficienciesAndLanguages"
+        android:name="dndCharacterCreator.OtherProficienciesAndLanguages"
+        android:label="Other Proficiencies and Languages"
+        tools:layout="@layout/fragment_other_proficiencies_and_languages">
+        <action
+            android:id="@+id/action_otherProficienciesAndLanguages_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/featuresAndTraits"
+        android:name="dndCharacterCreator.FeaturesAndTraits"
+        android:label="Features and Traits"
+        tools:layout="@layout/fragment_features_and_traits">
+        <action
+            android:id="@+id/action_featuresAndTraits_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personality"
+        android:name="dndCharacterCreator.Personality"
+        android:label="Personality"
+        tools:layout="@layout/fragment_personality">
+        <action
+            android:id="@+id/action_personality_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_personality_to_userDrawingCanvas"
+            app:destination="@id/userDrawingCanvas" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthPointsInfo"
+        android:name="dndCharacterCreator.HealthPointsInfo"
+        android:label="Health Info"
+        tools:layout="@layout/fragment_health_points_info">
+        <action
+            android:id="@+id/action_healthPointsInfo_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/skills"
+        android:name="dndCharacterCreator.Skills"
+        android:label="Skills"
+        tools:layout="@layout/fragment_skills">
+        <action
+            android:id="@+id/action_skills_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterClassAndInfo"
+        android:name="dndCharacterCreator.CharacterClassAndInfo"
+        android:label="Character Information"
+        tools:layout="@layout/fragment_character_class_and_info">
+        <action
+            android:id="@+id/action_characterClassAndInfo_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diceRollerDialogFragmentLayout"
+        android:name="dndCharacterCreator.DiceRollerDialogFragmentLayout"
+        android:label="Dice Roller"
+        tools:layout="@layout/fragment_dice_roller_dialog_layout">
+        <action
+            android:id="@+id/action_diceRollerDialogFragmentLayout_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterCreation"
+        android:name="dndCharacterCreator.CharacterCreation"
+        android:label="Character Creation"
+        tools:layout="@layout/fragment_character_creation">
+        <action
+            android:id="@+id/action_characterCreation_to_startScreen"
+            app:destination="@id/startScreen" />
+        <action
+            android:id="@+id/action_characterCreation_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/knownSpellsFragment"
+        android:name="dndCharacterCreator.KnownSpellsFragment"
+        android:label="All Abilities and Spells"
+        tools:layout="@layout/fragment_known_spells">
+        <action
+            android:id="@+id/action_knownSpellsFragment_to_abilityFragment"
+            app:destination="@id/abilityFragment" />
+        <action
+            android:id="@+id/action_knownSpellsFragment_to_spellbookClasses"
+            app:destination="@id/spellbookClasses" />
+    </fragment>
+    <fragment
+        android:id="@+id/abilityFragment"
+        android:name="dndCharacterCreator.AbilityFragment"
+        android:label="Ability"
+        tools:layout="@layout/fragment_ability">
+        <action
+            android:id="@+id/action_abilityFragment_to_knownSpellsFragment"
+            app:destination="@id/knownSpellsFragment" />
+        <action
+            android:id="@+id/action_abilityFragment_to_preparedAbilitiesAndSpellcasting"
+            app:destination="@id/preparedAbilitiesAndSpellcasting" />
+        <action
+            android:id="@+id/action_abilityFragment_to_spellbookClasses"
+            app:destination="@id/spellbookClasses" />
+        <action
+            android:id="@+id/action_abilityFragment_to_knownSpellsForClass"
+            app:destination="@id/knownSpellsForClass" />
+        <action
+            android:id="@+id/action_abilityFragment_to_preparedKnownSpellsForClass"
+            app:destination="@id/preparedKnownSpellsForClass" />
+        <action
+            android:id="@+id/action_abilityFragment_to_combat"
+            app:destination="@id/combat" />
+    </fragment>
+    <fragment
+        android:id="@+id/preparedAbilitiesAndSpellcasting"
+        android:name="dndCharacterCreator.PreparedAbilitiesAndSpellcasting"
+        android:label="Prepared Spellbook"
+        tools:layout="@layout/fragment_prepared_abilities_and_spellcasting">
+        <action
+            android:id="@+id/action_preparedAbilitiesAndSpellcasting_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_preparedAbilitiesAndSpellcasting_to_abilityFragment"
+            app:destination="@id/abilityFragment" />
+        <action
+            android:id="@+id/action_preparedAbilitiesAndSpellcasting_to_preparedSpellbookClasses"
+            app:destination="@id/preparedSpellbookClasses" />
+    </fragment>
+    <fragment
+        android:id="@+id/spellbookClasses"
+        android:name="dndCharacterCreator.SpellbookClasses"
+        android:label="Spellbook"
+        tools:layout="@layout/fragment_spellbook_classes">
+        <action
+            android:id="@+id/action_spellbookClasses_to_knownSpellsFragment"
+            app:destination="@id/knownSpellsFragment" />
+        <action
+            android:id="@+id/action_spellbookClasses_to_abilityFragment"
+            app:destination="@id/abilityFragment" />
+        <action
+            android:id="@+id/action_spellbookClasses_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_spellbookClasses_to_knownSpellsForClass"
+            app:destination="@id/knownSpellsForClass" />
+    </fragment>
+    <fragment
+        android:id="@+id/knownSpellsForClass"
+        android:name="dndCharacterCreator.knownSpellsForClass"
+        android:label="Class Spells"
+        tools:layout="@layout/fragment_known_spells_for_class">
+        <action
+            android:id="@+id/action_knownSpellsForClass_to_abilityFragment"
+            app:destination="@id/abilityFragment" />
+        <action
+            android:id="@+id/action_knownSpellsForClass_to_spellbookClasses"
+            app:destination="@id/spellbookClasses" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDrawingCanvas"
+        android:name="dndCharacterCreator.UserDrawingCanvas"
+        android:label="Drawing Canvas"
+        tools:layout="@layout/fragment_user_drawing_canvas">
+        <action
+            android:id="@+id/action_userDrawingCanvas_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_userDrawingCanvas_to_personality"
+            app:destination="@id/personality" />
+        <action
+            android:id="@+id/action_userDrawingCanvas_to_combat"
+            app:destination="@id/combat" />
+    </fragment>
+    <fragment
+        android:id="@+id/preparedSpellbookClasses"
+        android:name="dndCharacterCreator.preparedSpellbookClasses"
+        android:label="Classes"
+        tools:layout="@layout/fragment_prepared_spellbook_classes">
+        <action
+            android:id="@+id/action_preparedSpellbookClasses_to_preparedAbilitiesAndSpellcasting"
+            app:destination="@id/preparedAbilitiesAndSpellcasting" />
+        <action
+            android:id="@+id/action_preparedSpellbookClasses_to_preparedKnownSpellsForClass"
+            app:destination="@id/preparedKnownSpellsForClass" />
+    </fragment>
+    <fragment
+        android:id="@+id/preparedKnownSpellsForClass"
+        android:name="dndCharacterCreator.preparedKnownSpellsForClass"
+        android:label="Class Spells"
+        tools:layout="@layout/fragment_prepared_known_spells_for_class">
+        <action
+            android:id="@+id/action_preparedKnownSpellsForClass_to_preparedSpellbookClasses"
+            app:destination="@id/preparedSpellbookClasses" />
+        <action
+            android:id="@+id/action_preparedKnownSpellsForClass_to_abilityFragment"
+            app:destination="@id/abilityFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C402D">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".StartScreen">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createCharacter_button3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/buttons_classic"
+            android:padding="5dp"
+            android:text="about"
+            android:textColor="@color/buttons_text_classic"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/createCharacter_button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/characterCreation_button" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/characterCreation_button"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/buttons_classic"
+            android:padding="5dp"
+            android:text="Characters"
+            android:textColor="@color/buttons_text_classic"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/createCharacter_button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createCharacter_button2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@color/buttons_classic"
+            android:padding="5dp"
+            android:text="Remove Ads"
+            android:textColor="@color/buttons_text_classic"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createCharacter_button3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

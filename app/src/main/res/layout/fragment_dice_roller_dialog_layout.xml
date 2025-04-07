@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_classic"
+    android:theme="@android:style/Theme.Holo.Dialog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DiceRollerDialogFragmentLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rollValues_constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/diceRoller_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diceRollValue_textView">
+
+            <TextView
+                android:id="@+id/rollValuesTitle_txtView"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:background="@color/views_classic"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/roll_values"
+                android:textAlignment="gravity"
+                android:textColor="@color/labels_text_classic"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/rollValues_txtView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rollValues_txtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/inputs_classic"
+                android:elevation="100dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="2"
+                android:textAlignment="gravity"
+                android:textColor="@color/text_classic"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rollValuesTitle_txtView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/diceRoller_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/buttons_classic"
+            android:text="@string/roll"
+            android:textColor="@color/buttons_text_classic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rollValues_constraintLayout" />
+
+        <TextView
+            android:id="@+id/diceRollValue_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#F1F1F1"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/rollValues_constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfDice_constraintLayout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/numberOfDice_constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/diceRollValue_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rollButtons_constraintLayout">
+
+            <TextView
+                android:id="@+id/numberOfRolls_textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/views_classic"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:text="@string/number_of_rolls"
+                android:textAlignment="gravity"
+                android:textColor="@color/labels_text_classic"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/numberOfRolls_spinner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/numberOfRolls_spinner"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/inputs_classic"
+                android:gravity="center_horizontal|center_vertical"
+                android:textAlignment="gravity"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/numberOfRolls_textView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rollButtons_constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="122dp"
+            app:layout_constraintBottom_toTopOf="@+id/numberOfDice_constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d100_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/buttons_classic"
+                android:text="@string/_1d100"
+                android:textColor="@color/buttons_text_classic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/customRoll_constraintLayout"
+                app:layout_constraintStart_toEndOf="@+id/d20_button"
+                app:layout_constraintTop_toBottomOf="@+id/d8_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d20_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/buttons_classic"
+                android:text="@string/_1d20"
+                android:textColor="@color/buttons_text_classic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/d100_button"
+                app:layout_constraintStart_toEndOf="@+id/d12_button"
+                app:layout_constraintTop_toBottomOf="@+id/d6_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d12_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/buttons_classic"
+                android:text="@string/_1d12"
+                android:textColor="@color/buttons_text_classic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/d20_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/d4_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d4_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/buttons_classic"
+                android:text="@string/_1d4"
+                android:textColor="@color/buttons_text_classic"
+                app:layout_constraintBottom_toTopOf="@+id/d12_button"
+                app:layout_constraintEnd_toStartOf="@+id/d6_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d10_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/buttons_classic"
+                android:text="@string/_1d10"
+                android:textColor="@color/buttons_text_classic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/d8_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d6_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/buttons_classic"
+                android:text="@string/_1d6"
+                android:textColor="@color/buttons_text_classic"
+                app:layout_constraintBottom_toTopOf="@+id/d20_button"
+                app:layout_constraintEnd_toStartOf="@+id/d8_button"
+                app:layout_constraintStart_toEndOf="@+id/d4_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/d8_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/buttons_classic"
+                android:text="@string/_1d8"
+                android:textColor="@color/buttons_text_classic"
+                app:layout_constraintBottom_toTopOf="@+id/d100_button"
+                app:layout_constraintEnd_toStartOf="@+id/d10_button"
+                app:layout_constraintStart_toEndOf="@+id/d6_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/customRoll_constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/d100_button"
+                app:layout_constraintTop_toBottomOf="@+id/d10_button">
+
+                <TextView
+                    android:id="@+id/diceValue_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="18dp"
+                    android:background="@color/views_classic"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:text="@string/custom"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/labels_text_classic"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/diceValue_editTxtNum"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/diceValue_editTxtNum"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/inputs_classic"
+                    android:elevation="100dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:paddingBottom="2dp"
+                    android:saveEnabled="false"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_classic"
+                    android:textIsSelectable="false"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/diceValue_textView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

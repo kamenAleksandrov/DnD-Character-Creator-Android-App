@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_classic"
+    android:orientation="vertical"
+    tools:context=".Combat">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout69"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout70"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/weapons_textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/views_classic"
+                android:padding="5dp"
+                android:text="Weapon Attacks"
+                android:textColor="@color/labels_text_classic"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/weaponAttacks_editText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/weaponAttacks_editText"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@color/inputs_classic"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:foregroundGravity="top"
+                android:gravity="start"
+                android:inputType="textMultiLine|textPersonName"
+                android:isScrollContainer="true"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="always"
+                android:padding="5dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:selectAllOnFocus="false"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_classic"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weapons_textView2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout70"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout72"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout69">
+
+            <EditText
+                android:id="@+id/combatNotes_editText"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@color/inputs_classic"
+                android:ems="10"
+                android:fadeScrollbars="false"
+                android:foregroundGravity="top"
+                android:gravity="start"
+                android:inputType="textMultiLine|textPersonName"
+                android:isScrollContainer="true"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="always"
+                android:padding="5dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:selectAllOnFocus="false"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_classic"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weapons_textView3" />
+
+            <TextView
+                android:id="@+id/weapons_textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/views_classic"
+                android:padding="5dp"
+                android:text="Combat Notes"
+                android:textColor="@color/labels_text_classic"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/combatNotes_editText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout71"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout72">
+
+            <TextView
+                android:id="@+id/weapons_textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/views_classic"
+                android:padding="5dp"
+                android:text="Battle Plan"
+                android:textColor="@color/labels_text_classic"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/combatDrawing_Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/combatDrawing_Button"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@string/character_drawing"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weapons_textView4"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout72"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout71"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout70">
+
+            <TextView
+                android:id="@+id/preparedAbilitiesSpinnerLabel_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/views_classic"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Prepared spells and abilities"
+                android:textColor="@color/labels_text_classic"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/preparedAbilitiesSpinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/preparedAbilitiesSpinner"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@color/inputs_classic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/preparedAbilitiesSpinnerLabel_textView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_classic"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4C402D"
+        android:isScrollContainer="true"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="always"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/treasure_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#E6C1A758"
+            android:padding="5dp"
+            android:text="@string/treasure"
+            android:textColor="@color/labels_text_classic"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/treasure_editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/equipment_editText" />
+
+        <EditText
+            android:id="@+id/treasure_editText"
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/inputs_classic"
+            android:ems="10"
+            android:foregroundGravity="top"
+            android:gravity="start"
+            android:inputType="textMultiLine|textPersonName"
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:selectAllOnFocus="false"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_classic"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/treasure_textView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/currencies_constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/views_classic"
+            app:layout_constraintBottom_toTopOf="@+id/equipment_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout31"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/copper_editTxtNum"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@color/inputs_classic"
+                    android:ems="10"
+                    android:inputType="numberSigned|number"
+                    android:textAlignment="center"
+                    android:textColor="#D3572E2E"
+                    app:layout_constraintBottom_toTopOf="@+id/copper_txtView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/copper_txtView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/copper"
+                    android:textAlignment="center"
+                    android:textColor="@color/labels_text_classic"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/copper_editTxtNum" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout30"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout29"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/silver_editTxtNum"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@color/inputs_classic"
+                    android:ems="10"
+                    android:inputType="numberSigned|number"
+                    android:textAlignment="center"
+                    android:textColor="#E4E4E4"
+                    app:layout_constraintBottom_toTopOf="@+id/silver_txtView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/silver_txtView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/silver"
+                    android:textAlignment="center"
+                    android:textColor="@color/labels_text_classic"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/silver_editTxtNum" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout32"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout31"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/electrum_editTxtNum"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@color/inputs_classic"
+                    android:ems="10"
+                    android:inputType="numberSigned|number"
+                    android:textAlignment="center"
+                    android:textColor="#9A9418"
+                    app:layout_constraintBottom_toTopOf="@+id/electrum_txtView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/electrum_txtView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/electrum"
+                    android:textAlignment="center"
+                    android:textColor="@color/labels_text_classic"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/electrum_editTxtNum" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout33"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout30"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/gold_editTxtNum"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@color/inputs_classic"
+                    android:ems="10"
+                    android:inputType="numberSigned|number"
+                    android:textAlignment="center"
+                    android:textColor="#FFBF00"
+                    app:layout_constraintBottom_toTopOf="@+id/gold_txtView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/gold_txtView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gold"
+                    android:textAlignment="center"
+                    android:textColor="@color/labels_text_classic"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gold_editTxtNum" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout32"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/platinum_editTxtNum"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:background="@color/inputs_classic"
+                    android:ems="10"
+                    android:inputType="numberSigned|number"
+                    android:textAlignment="center"
+                    android:textColor="#00BCD4"
+                    app:layout_constraintBottom_toTopOf="@+id/platinum_txtView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/platinum_txtView"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/platinum"
+                    android:textAlignment="center"
+                    android:textColor="@color/labels_text_classic"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/platinum_editTxtNum" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/equipment_editText"
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/inputs_classic"
+            android:ems="10"
+            android:fadeScrollbars="false"
+            android:foregroundGravity="top"
+            android:gravity="start"
+            android:inputType="textMultiLine|textPersonName"
+            android:isScrollContainer="true"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="always"
+            android:padding="5dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:selectAllOnFocus="false"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_classic"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/treasure_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/equipment_textView" />
+
+        <TextView
+            android:id="@+id/equipment_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#E6C1A758"
+            android:padding="5dp"
+            android:text="@string/equipment"
+            android:textColor="@color/labels_text_classic"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/equipment_editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currencies_constraintLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

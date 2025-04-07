@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">DND 5e Homebrew</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="previous">Previous</string>
+    <!-- Strings used for shared preferences files names -->
+    <string name="app_default_shared_preference">appDefaultSharedPreference</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="known_spells">Spellbook and Abilities</string>
+    <string name="attacks_and_spellcasting">Prepared Spells and Abilities</string>
+    <string name="other_proficiencies_and_languages">Other proficiencies and languages</string>
+    <string name="equipment_and_treasure">Equipment and Treasure</string>
+    <string name="features_and_traits">Features and traits</string>
+    <string name="personality">Personality</string>
+    <string name="spell_attack_bonus">Spell Attack Bonus</string>
+    <string name="spell_save_dc">Spell Save Dc</string>
+    <string name="spellcasting_ability">Spellcasting Ability</string>
+    <string name="speed">Speed</string>
+    <string name="initiative">Initiative</string>
+    <string name="armor_class">Armor Class</string>
+    <string name="inspiration">Inspiration</string>
+    <string name="profisiency_bonus">Proficiency bonus</string>
+    <string name="perseption">Perception</string>
+    <string name="hp">HP</string>
+    <string name="temp_hp">Temp HP</string>
+    <string name="charisma2">Charisma</string>
+    <string name="hp_info">hp info</string>
+    <string name="wisdom2">Wisdom</string>
+    <string name="intelligence2">Intelligence</string>
+    <string name="constitution2">Constitution</string>
+    <string name="dexterity2">Dexterity</string>
+    <string name="strength2">Strength</string>
+    <string name="skills">Skills</string>
+    <string name="info">Info</string>
+    <string name="character_name">Character name</string>
+    <string name="combat">Combat Notes</string>
+    <string name="dice_roller_dialog_fragment_text">Roll Dice</string>
+    <string name="dice_roller_dialog_fragment_done_button">Done</string>
+    <string name="dice_roller_dialog_fragment_title">Roll a dice</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="treasure">Treasure</string>
+    <string name="gold">Gold</string>
+    <string name="platinum">Platinum</string>
+    <string name="electrum">Electrum</string>
+    <string name="silver">Silver</string>
+    <string name="copper">Copper</string>
+    <string name="equipment">Equipment</string>
+    <string name="other2">Other</string>
+    <string name="eyes">Eyes</string>
+    <string name="race">Race</string>
+    <string name="level">Level</string>
+    <string name="background">Background</string>
+    <string name="player_name">Player Name</string>
+    <string name="aligment">Alignment</string>
+    <string name="experience_points">XP</string>
+    <string name="skin">Skin</string>
+    <string name="age">Age</string>
+    <string name="hair">Hair</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="features">Features</string>
+    <string name="traits">Traits</string>
+    <string name="failures">Failures</string>
+    <string name="successes">Successes</string>
+    <string name="hit_die">Hit DIe</string>
+    <string name="throws_history">Throws History</string>
+    <string name="total_throws">Total Throws</string>
+    <string name="saving_throws">Saving Throws</string>
+    <string name="dexterity">Dexterity</string>
+    <string name="constitution">Constitution</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="wisdom">Wisdom</string>
+    <string name="charisma">Charisma</string>
+    <string name="strenght">Strength</string>
+    <string name="other">Other</string>
+    <string name="languages">Languages</string>
+    <string name="weapons">Weapons</string>
+    <string name="armor">Armor</string>
+    <string name="religion_int">Religion (Int)</string>
+    <string name="sleight_of_hand_dex">Sleight of Hand (Dex)</string>
+    <string name="stealth_dex">Stealth (Dex)</string>
+    <string name="survival_wis">Survival (Wis)</string>
+    <string name="persuasion_cha">Persuasion (Cha)</string>
+    <string name="performance_cha">Performance (Cha)</string>
+    <string name="medicine_wis">Medicine (Wis)</string>
+    <string name="perception_wis">Perception (Wis)</string>
+    <string name="insight_wis">Insight (Wis)</string>
+    <string name="intimidation_cha">Intimidation (Cha)</string>
+    <string name="nature_int">Nature (Int)</string>
+    <string name="investigation_int">Investigation (Int)</string>
+    <string name="history_int">History (Int)</string>
+    <string name="deception_cha">Deception (Cha)</string>
+    <string name="athletics_str">Athletics (Str)</string>
+    <string name="arcana_int">Arcana (Int)</string>
+    <string name="animal_handling_wis">Animal Handling (Wis)</string>
+    <string name="acrobatics_dex">Acrobatics (Dex)</string>
+    <string name="backstory">Backstory</string>
+    <string name="symbol">Symbol</string>
+    <string name="allies_and_organizations">Allies and Organizations</string>
+    <string name="flaws">Flaws</string>
+    <string name="bonds">Bonds</string>
+    <string name="ideals">Ideals</string>
+    <string name="personality_traits">Personality traits</string>
+    <string name="roll_value">roll value</string>
+    <string name="enter_character_name">Create character name</string>
+    <string name="create_character">Create character</string>
+    <string name="roll_values">Roll values</string>
+    <string name="roll">Roll</string>
+    <string name="number_of_rolls">Number of rolls</string>
+    <string name="_1d100">1D100</string>
+    <string name="_1d20">1D20</string>
+    <string name="_1d12">1D12</string>
+    <string name="_1d4">1D4</string>
+    <string name="_1d10">1D10</string>
+    <string name="_1d6">1D6</string>
+    <string name="_1d8">1D8</string>
+    <string name="custom">Custom</string>
+    <string name="character_drawing">Character Drawing</string>
+    <string name="add_ability_or_spell">Add ability or spell</string>
+    <string name="abilities">Abilities</string>
+    <string name="spells">Spells</string>
+    <string name="class_name">Class name</string>
+    <string name="add_ability_or_spell_known">Add ability or spell</string>
+    <string name="abilities_known">Abilities</string>
+    <string name="spells_known">Spells</string>
+    <string name="charactersymbolimage">characterSymbolIMage</string>
+    <string name="add_ability_or_spell_to_list">Add ability or spell to list</string>
+    <string name="available_spells_per_level">Available Spells Per Level</string>
+    <string name="prepared_abilities_and_spells">Prepared Abilities and Spells</string>
+    <string name="class_name_prepared">Class name</string>
+    <string name="spells_prepared">Spells</string>
+    <string name="abilities_prepared">Abilities</string>
+    <string name="choose_class">Choose Class</string>
+    <string name="add_ability_or_spell_spellbook">Add ability or spell</string>
+    <string name="all_spells_spellbook">All spells</string>
+    <string name="create_class_spellbook">create class</string>
+    <string name="create_class_name_spellbook">Create class name</string>
+    <string name="clear_all">Clear all</string>
+    <string name="save">save</string>
+    <string name="eraser">eraser</string>
+    <string name="brush">Brush</string>
+    <string name="symbol_description">Symbol Description</string>
+    <string name="damage_roll">Damage roll</string>
+    <string name="save_ability">Save</string>
+    <string name="casting_time">Casting time</string>
+    <string name="create_ability_name">Create ability name</string>
+    <string name="duration">Duration</string>
+    <string name="range">Range</string>
+    <string name="description">Description</string>
+    <string name="level_ability">Level</string>
+    <string name="action_bnsaction">Action/BnsAction</string>
+    <string name="ability">Ability</string>
+    <string name="spell">Spell</string>
+    <string name="choose_if_ability_or_spell">Choose type</string>
+    <string name="choose_class_ability">Choose class</string>
+    <string name="hit_point_maximum">Hit Point Maximum</string>
+    <string name="choose_type">Choose type</string>
+</resources>

@@ -1,0 +1,50 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.207" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/drawable/ic_launcher_background.xml" value="0.207" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/character_creation_list_text.xml" value="0.25" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/content_main.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_ability.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_character_class_and_info.xml" value="0.25" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_character_creation.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_combat.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_dice_roller_dialog_layout.xml" value="0.25" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_equipment_and_treasure.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_features_and_traits.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_first-DESKTOP-BB0Q38D.xml" value="0.5546875" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_first.xml" value="0.5" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_health_points_info.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_item_list.xml" value="0.3296875" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_known_spells.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_known_spells_for_class.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_knows_spells.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_other_proficiencies_and_languages.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_personality.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_prepared_abilities_and_spellcasting.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_prepared_known_spells_for_class.xml" value="0.3625" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_prepared_spellbook_classes.xml" value="0.3625" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_scrolling.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_skills.xml" value="0.22" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_spellbook_classes.xml" value="0.3625" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_spells.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_start_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/fragment_user_drawing_canvas.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/layout/recyclerview.xml" value="0.1762917933130699" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.207" />
+        <entry key="..\:/OneDrive/Personal_Projects/DNDappalpfa/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.207" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
